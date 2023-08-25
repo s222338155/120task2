@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Concepts</title>
+</head>
+<body>
+<script>
+  // String methods
+  const str = "Hello, World!";
+  console.log("String length:", str.length);
+  console.log("Uppercase:", str.toUpperCase());
+  console.log("Substring:", str.substring(0, 5));
+  console.log("Index of 'World':", str.indexOf("World"));
+  console.log("Reversed:", str.split("").reverse().join(""));
+
+  // Number methods
+  const num = 42.789;
+  console.log("Fixed to 2 decimal places:", num.toFixed(2));
+  console.log("Square root:", Math.sqrt(num));
+  console.log("Rounded up:", Math.ceil(num));
+  console.log("Random number between 0 and 1:", Math.random());
+  console.log("Maximum of 10 and 20:", Math.max(10, 20));
+
+  // Array methods
+  const arr = [3, 7, 1, 9, 2];
+  console.log("Sorted array:", arr.sort((a, b) => a - b));
+  console.log("Array length:", arr.length);
+  console.log("Index of value 9:", arr.indexOf(9));
+  console.log("Joined as string:", arr.join(", "));
+  console.log("Last element removed:", arr.pop());
+
+  // Date methods
+  const now = new Date();
+  console.log("Current date and time:", now);
+  console.log("Current year:", now.getFullYear());
+  console.log("Month:", now.getMonth()); // Note: Months are 0-indexed
+  console.log("Day of the week:", now.getDay()); // Sunday is 0
+  console.log("Formatted date:", now.toLocaleDateString());
+
+  // Function methods
+  function greet(name) {
+    return "Hello, " + name + "!";
+  }
+  
+  const greetFunc = greet;
+  console.log(greetFunc("Alice"));
+
+  function multiply(a, b) {
+    return a * b;
+  }
+
+  const multiplyResult = multiply(5, 3);
+  console.log("Multiplication result:", multiplyResult);
+</script>
+</body>
+</html>

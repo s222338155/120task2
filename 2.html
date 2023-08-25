@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Web Design</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(189, 224, 254)
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 2rem 0; 
+  }
+
+  .header {
+    background-color: rgb(162, 210, 255);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .box {
+    background-color: rgb(205, 180, 219);
+    border: 3px solid  rgb(255, 200, 221);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: calc(33.33% - 1rem); 
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .box {
+      width: 100%; 
+    }
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Responsive Web Design</h1>
+  <p>The website will dynamically change if the window is resized.</p>
+</div>
+
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+  <div class="box">Box 4</div>
+  <div class="box">Box 5</div>
+  <div class="box">Box 6</div>
+</div>
+
+<div class="image-container">
+    <img class="responsive-image" src="https://i.pinimg.com/564x/d2/1a/3a/d21a3ac3fbd2caaff6e5c9d8800ad886.jpg" alt="Responsive Image">
+</div>
+
+
+</body>
+</html>
